@@ -1,0 +1,148 @@
+<!----------------------------------
+    Student Name: Kamal Dhital
+    Student ID: 2407046 
+----------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Starting of Head Section -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Weather</title>
+    <!-- Linking CSS File -->
+    <link href="Kamal_Dhital_2407046.css" rel="stylesheet">
+    <!-- Adding External Sources for icon-->
+    <script src="https://kit.fontawesome.com/654a917f30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<!-- Ending of Head Section -->
+
+
+<!-- Starting Section of Body -->
+
+<body id="mainBody">
+    <!-- Wrapper-->
+    <div id="wrapper">
+        <!-- Left Section -->
+        <div id="left">
+            <form>
+                <!-- Search Bar Section -->
+                <div id="search" class="leftContent">
+                    <!-- Icon -->
+                    <div id="searchIcon" class="material-symbols-outlined" style="padding-top: 8px;">
+                        travel_explore
+                    </div>
+                    <!-- Search Bar -->
+                    <div id="searchBar"><input type="search" id="searchInput" placeholder="eg.Chitawan" name="city">
+                    </div>
+                    <!-- Search Button -->
+                    <div id="searchBTN"><button id="searchButton">
+                            Search
+                        </button></div>
+                </div>
+            </form>
+            <!-- Pressure, Humidity and Wind Speed Wrapper-->
+            <div id="detailWrapper" class="leftContent">
+                <!-- It feels like -->
+                <div class="detailWrapperData">
+                    <div class="iconAndTitle">
+                        <figure><i class="fa-solid fa-temperature-half"></i>&nbsp;&nbsp;
+                        </figure>
+                        <p>It Feels Like</p>
+                    </div>
+                    <div id="itFeelsLike" class="fetchData"></div>
+                </div>
+                <!-- Weather Description -->
+                <div class="detailWrapperData">
+                    <div class="iconAndTitle">
+                        <figure><i class="fa-solid fa-comment-dots"></i>&nbsp;&nbsp;
+                        </figure>
+                        <p>Weather Description</p>
+                    </div>
+                    <div id="weatherDescription" class="fetchData"></div>
+                </div>
+                <!-- Pressure -->
+                <div class="detailWrapperData">
+                    <div class="iconAndTitle">
+                        <figure>
+                            <i class="fa-solid fa-gauge"></i>&nbsp;&nbsp;
+                        </figure>
+                        <p>Pressure</p>
+                    </div>
+                    <div id="pressure" class="fetchData"></div>
+                </div>
+                <!-- Wind Speed -->
+                <div class="detailWrapperData">
+                    <div class="iconAndTitle">
+                        <figure><i class="fas fa-wind"></i></i>&nbsp;&nbsp;
+                        </figure>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div id="windSpeed" class="fetchData"></div>
+                </div>
+                <!-- Humidity -->
+                <div class="detailWrapperData">
+                    <div class="iconAndTitle">
+                        <figure><i class="fa-solid fa-droplet"></i>&nbsp;&nbsp;</figure>
+                        <p>Humidity</p>
+                    </div>
+                    <div id="humidity" class="fetchData"></div>
+                </div>
+                <!-- Visibility -->
+                <div class="detailWrapperData">
+                    <div class="iconAndTitle">
+                        <figure><i class="fa-solid fa-eye"></i></i>&nbsp;&nbsp;
+                        </figure>
+                        <p>Visibility</p>
+                    </div>
+                    <div id="visibility" class="fetchData"></div>
+                </div>
+            </div>
+            <div id="pastDataContainer">
+                <table id="weatherTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Temp</th>
+                            <th>Desc</th>
+                            <th>Feels Like</th>
+                            <th>Pressure</th>
+                            <th>Wind Speed</th>
+                            <th>Humidity</th>
+                            <th>Visibility</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be inserted here dynamically using JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Copyright Section -->
+            <div id="copyright" class="leftContent">
+                <p>Copyright &copy; Kamal Dhital (2407046), 2024</p>
+            </div>
+        </div>
+        <!-- Ending of Left Wrapper -->
+        <!-- Starting of Right Wrapper -->
+        <div id="right">
+            <!-- Forecast Info like Weather Detail and Icon, Temperature, City and Date and Time-->
+            <div class="forecastInfo">
+                <div id="weatherIcon"></div>
+                <div id="temperature"></div>
+                <div id="weatherCondition"></div>
+                <div id="city"></div>
+                <div id="dateAndTime"></div>
+            </div>
+        </div>
+        <!-- End of Right Wrapper -->
+    </div>
+    <!-- Linking JavaScript file -->
+    <script src="Kamal_Dhital_2407046.js"></script>
+</body>
+
+</html>

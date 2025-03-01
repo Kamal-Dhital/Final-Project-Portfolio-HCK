@@ -1,0 +1,1 @@
+{"Kamal": 84, "Anil": 36, "Nishan": -24, "Anush": 24, "Ishan": -44}
